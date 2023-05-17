@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:cursive
+}
+
+@media (min-width:1001px) {
+    .planoDeFundo{
+        
+        background-color:rgb(41, 2, 131);
+        height: 100vh;
+    }
+    #menu{
+        position: absolute;
+        height: 50px;
+        margin-top: 1em;
+        margin-left: 18em;
+    }
+    #menuOption{
+        display: none;
+            position: absolute;
+            height: 200px;
+            width: 250px;
+            border-radius: 20px;
+            margin-top: 25%;
+            margin-left: 30%;
+            background: linear-gradient(80deg, rgb(89, 0, 255),rgb(255, 0, 102));
+           
+            text-align: center;
+            color: #fff;
+    }
+    h2{
+        position: absolute;
+        font-size: 45pt;
+        margin-top: 15%;
+        margin-left: 35%;
+        color: white;
+        border: blue;
+        text-shadow: 2px 3px 30px  blue;
+    }
+    #circle1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position:absolute;
+        height: 450px;
+        width: 450px;
+        background: linear-gradient(60deg, rgb(89, 0, 255),rgb(255, 0, 102));
+        border-radius:50%;
+        top: 10em;
+        margin-left: 65%;
+        bottom: 120px;
+        box-shadow: 5px 5px 30px 55px  rgba(89, 0, 255, 0.26);
+       
+    }
+    #circle2{
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        background: rgba(255, 0, 102, 0.364);
+        box-shadow: 5px 5px 30px 60px rgba(255, 0, 102, 0.363);
+        border-radius:50%;
+        justify-content: space-between;
+        top: 15em;
+        margin-left: 10%;
+        bottom: 300px;
+        opacity: 75%;
+    }
+
+    .containerMenu {
+        position: absolute;
+        align-items: center;
+        justify-content: space-between;
+        width: 350px;
+        height: 350px;
+        bottom: 130px;
+        margin-left: 6%;
+        border-radius: 20px;
+        background: linear-gradient(60deg, rgb(89, 0, 255),rgb(255, 0, 102))
+    }
+    #persona{
+        position: absolute;
+        display: flex;
+        height: 250px;
+        justify-content: space-between;
+        margin-left: 5%;
+        top: 4em;
+       
+    }
+    #nome {
+        position: absolute;
+        display: block;
+        margin-top: 130px;
+        margin-left: 25px;
+        border: none;
+        width: 300px;
+        height: 30px;
+        border-radius: 20px;
+    }
+    #senha{
+        position: absolute;
+        display: block;
+        margin-top: 190px;
+        margin-left: 25px;
+        border: none;
+        width: 300px;
+        height: 30px;
+        border-radius: 20px;
+    }
+    #btnHome{
+        position: absolute;
+        bottom: 40px;
+        padding: 15px;
+        margin-left: 22%;
+        width: 200px;
+        border-radius:20px;
+        border: none;
+        color: #fff;
+        border: solid, black 1px;
+        background-color: rgba(9, 2, 48, 0.389);
+    }
+    
+    #btnHome:hover{
+        cursor: pointer;
+        background-color: rgb(255, 0, 102);
+        transition: 0.3s;
+    }
+    #logo{
+        position: absolute;
+        height: 50px;
+        top: 2%;
+        margin-left:5%;
+    
+    }
+    
+h1{
+    position: absolute;
+    color: #fff;
+    font-size: 20pt;
+    margin-left: 10%;
+    top: 25px;
+}
+    
+}
+
+@media(max-width:1000px) {
+    
+.planoDeFundo{
+    display: flex;
+    height: 100vh;
+    background-color: rgb(41, 2, 131);
+    justify-content:space-between;
+    align-items:center;
+    
+}
+h2{
+    display:  none;
+}
+#persona{
+   display: none;
+}
+.containerMenu{
+    position: absolute;
+    background: linear-gradient(60deg, rgb(89, 0, 255),rgb(255, 0, 102));
+    height:15em;
+    width: 15em;
+    justify-content: space-between;
+    margin-left: 14%;
+    border-radius: 20px;
+    
+    
+}
+#logo{
+    position: absolute;
+    height: 50px;
+}
+#menu{
+    margin-left: 75%;
+    position: absolute;
+    margin-top: 0.50em;
+    height: 40px;
+}
+#nome{
+    
+    height: 25px;
+    width: 85%;
+    border-radius: 20px;
+    border:none;
+    margin-top: 5em;
+    margin-left:1.5em ;
+}
+#senha{
+    height: 25px;
+    width: 85%;
+    border-radius: 20px;
+    border:none;
+    margin-top: 2em;
+    margin-left:1.5em ;
+}
+
+#btnHome{
+    margin-top: 40px;
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 1.5em;
+    color:  rgb(41, 2, 131);
+}
+:hover #btnHome{
+    cursor: pointer;
+    box-shadow: 5px 5px 20px 5px gre;
+}
+#menuOption{
+    display: none;
+        position: absolute;
+        height: 200px;
+        width: 250px;
+        border-radius: 20px;
+        margin-top: 15%;
+        margin-left: 10%;
+        background: linear-gradient(80deg, rgb(89, 0, 255),rgb(255, 0, 102));
+       
+        text-align: center;
+        color: #fff;
+}
+h1{
+    font-size: 175%;
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 1em;
+    color: azure;
+}
+#logo{
+    position: absolute;
+    height: 50px;
+    top: 2%;
+    margin-left:5%;
+
+}
+    
+}
