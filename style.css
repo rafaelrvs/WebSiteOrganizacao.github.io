@@ -170,16 +170,6 @@ h2{
     
     
 }
-#logo{
-    position: absolute;
-    height: 50px;
-}
-#menu{
-    margin-left: 75%;
-    position: absolute;
-    margin-top: 0.50em;
-    height: 40px;
-}
 #nome{
     
     height: 25px;
@@ -211,24 +201,11 @@ h2{
     cursor: pointer;
     box-shadow: 5px 5px 20px 5px gre;
 }
-#menuOption{
-    display: none;
-        position: absolute;
-        height: 200px;
-        width: 250px;
-        border-radius: 20px;
-        margin-top: 15%;
-        margin-left: 10%;
-        background: linear-gradient(80deg, rgb(89, 0, 255),rgb(255, 0, 102));
-       
-        text-align: center;
-        color: #fff;
-}
 h1{
     font-size: 175%;
     position: absolute;
     margin-top: 3px;
-    margin-left: 1em;
+    margin-left: 2.5em;
     color: azure;
 }
 #logo{
