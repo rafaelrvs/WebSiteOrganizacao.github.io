@@ -1,33 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Home</title>
-</head>
-<body>
-    <div class ='planoDeFundo'>
-     
-        
-        <div class="containerMenu">
-            <h1>Login</h1>
-            <img  id="menu"  src="/menu icons.png" alt="" onclick="valueMenu()">
-            <input id="nome" type="text" placeholder="  Nome">
-            <input id="senha" type="password" placeholder="  Senha">
-            <input id="btnHome"   type="submit" onclick="onSubmitLogin()">
-        </div>
-        <div id="menuOption">
-            <br>
-            <link rel="stylesheet" href="#">Cadastre-se<br><br>
-            <link rel="stylesheet" href="#">Help<br><br>
-            <link rel="stylesheet" href="#">Home<br><br>
-            <link rel="stylesheet" href="#">Esqueci a Senha
-        </div>
-
-    </div>
-   
-</body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>menu</title>
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="/home logo.png" alt="imagem logo" height="50px" />
+    </header>
+    <main>
+      <div id="main-img-circle">
+        <nav id="circle">
+          <img
+            id="persona"
+            src="/persona home.png"
+            alt="imagem persona"
+            height="300px"
+          />
+          <nav id="circle2"></nav>
+        </nav>
+      </div>
+      <div id="main-menu">
+        <nav>
+          <h1>Organize-se</h1>
+        </nav>
+        <nav id="btn-and-register">
+          <input id="btn" type="button" value="Login" />
+          <a href="">Cadastre-se</a>
+        </nav>
+      </div>
+    </main>
+  </body>
+  <script src="/script.js"></script>
 </html>
-<script src="/script.js"></script>
