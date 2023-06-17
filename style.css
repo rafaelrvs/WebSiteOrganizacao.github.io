@@ -111,5 +111,10 @@ h1{
 
 
   }
-  
+  #cadastro{
+    text-decoration: none;
+  }
+  #cadastro:hover{
+    color:  rgb(0, 255, 0);
+  }
   
