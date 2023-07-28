@@ -1,0 +1,75 @@
+:root{
+  --planoDeFundo: rgb(17, 17, 46);
+  --fonte:Verdana, Geneva, Tahoma, sans-serif;
+  --corBtn: linear-gradient(100deg, rgb(198, 4, 216), rgb(242, 10, 138), rgb(255, 7, 123));
+  --hoverbtn:rgb(0, 255, 0);
+
+} 
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+  display: grid;
+  grid-template-rows: repeat( 3,1fr) 1fr ;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--planoDeFundo);
+}
+.container__formulario{
+  display: grid;
+  grid-template-rows: 120px auto;
+  grid-template-columns: repeat(3,1fr);
+  grid-row: 2/2;
+  padding: auto;
+}
+
+#title{
+  margin-bottom: 25px;
+  font-size: 15pt;
+  
+}
+.Formulario{
+  display:grid;
+  align-items: center;
+  row-gap: 1rem;
+  padding: 50px ;
+  flex-direction: column;
+  border-radius: 25px;
+  background:var(--corBtn);
+
+  width: auto;
+}
+.Formulario #nome{
+  width: 25em;
+  padding: 10px;
+  border-radius: 25px;
+}
+.Formulario #email{
+  position: relative;
+  width: 25em;
+  padding: 10px;
+  border-radius: 25px;
+}
+.Formulario #senhaDeEntrada{
+  position: relative;
+  width: 25em;
+  padding: 10px;
+  border-radius: 25px;
+}
+.Formulario #btn-cadastro{
+  width: 15em;
+  padding: 15px;
+  border-radius: 25px;
+}
+.Formulario #container-bt-cadastro{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: flex-start;
+  align-items:center;
+  text-align: center;
+}

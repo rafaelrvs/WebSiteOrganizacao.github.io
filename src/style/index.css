@@ -1,12 +1,22 @@
+:root{
+    --planoDeFundo: rgb(17, 17, 46);
+    --fonte:Verdana, Geneva, Tahoma, sans-serif;
+    --corBtn:linear-gradient(100deg, rgb(198, 4, 216), rgb(242, 10, 138), rgb(255, 7, 123));
+    --hoverbtn:rgb(0, 255, 0);
+
+} 
+
+
+
 *{
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:var(--fonte);
     color: aliceblue;
 }
 body{
     height: 100vh;
-    background-color: rgb(17, 17, 46);
+    background-color:var(--planoDeFundo)
 }
 #logo{
     margin: 5%;
@@ -75,13 +85,13 @@ h1{
 #btn{
     padding: 15px 50px;
     border-radius:20px;
-    background:linear-gradient(100deg, rgb(198, 4, 216), rgb(242, 10, 138), rgb(255, 7, 123));
+    background:var(--corBtn);
     border: none ;
  
 }
 #btn:hover{
     cursor: pointer;
-    background: rgb(0, 255, 0);
+    background: var(--hoverbtn);
     color: black;
 }
 
@@ -118,7 +128,7 @@ h1{
     text-decoration: none;
   }
   #cadastro:hover{
-      color:  rgb(0, 255, 0);
+      color: var(--hoverbtn);
     }
     #main-cadastro{
         position: absolute;
