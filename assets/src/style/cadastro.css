@@ -1,0 +1,82 @@
+:root{
+  --planoDeFundo: rgb(17, 17, 46);
+  --fonte:Verdana, Geneva, Tahoma, sans-serif;
+  --corBtn: linear-gradient(100deg, rgb(198, 4, 216), rgb(242, 10, 138), rgb(255, 7, 123));
+  --hoverbtn:rgb(0, 255, 0);
+
+} 
+
+body{
+  display: grid;
+  grid-template-areas: 
+  "aside header"
+  "aside main";
+  grid-template-columns: repeat(5, 3fr) ;
+  grid-template-rows: repeat(3, 3fr) ;
+  height: 100vh;
+  background: var(--planoDeFundo);
+}
+
+.cabecalho {
+  grid-area: header;
+}
+
+.principal {
+  grid-area: main;
+
+}
+
+.principal{
+  display:grid;
+  row-gap: 1.5rem;
+  grid-column:4/3;
+  background: var(--corBtn);
+  box-shadow: 0px 0px 5px ;
+  height: 25em;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  padding: 45px; 
+  color: #fff; 
+  font-family: var(--fonte);
+}
+
+.formulario{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  border-radius: 25px;
+  row-gap: 15px;
+
+}
+#email{
+  height: 35px;
+  width: 25em;
+  border-radius: 25px;
+  border: none;
+}
+#nome{
+  height: 35px;
+  width: 25em;
+  border-radius: 25px;
+  border: none;
+}
+#senhaDeEntrada{
+  border: none;
+  height: 35px;
+  width: 25em;
+  border-radius: 25px;
+}
+#container-bnt-cadastro{
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+#btn-cadastro{
+  height: 50px;
+  width: 10em;
+  border-radius: 25px;
+  border: none;
+  text-align: center;
+}

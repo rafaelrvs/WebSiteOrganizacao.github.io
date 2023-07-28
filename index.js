@@ -1,8 +1,17 @@
-let btnCadastro = document.querySelector("#cadastro");
+let btn = document.querySelector("#btn-and-register");
 
-btnCadastro.addEventListener("click",(event) =>{
-  window.location.href="cadastro.html"
+btn.addEventListener("click",(event) =>{
+  const valor = event.target.id;
+ 
+  if(valor === "btn"){
+
+  }
+  if(valor === "cadastro"){
+    window.location.href="cadastro.html"
+
+  }
   event.preventDefault();
 
 })
+
 
