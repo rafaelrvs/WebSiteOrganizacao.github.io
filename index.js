@@ -11,7 +11,6 @@ btn.addEventListener("click",(event) =>{
   if(valor === "cadastro"){
     window.location.href="cadastro.html"
     event.preventDefault();
-
   }
 
 })

@@ -9,16 +9,20 @@
 <body>
       <div class="content__login">
        
-        <form action="">
+        <form class="formulario" action="">
           <div id="div__text__input">  
-            <input type="text">
-            <input type="password">
+            <h1>Organize-se</h1>
+            <label for="email">E-mail</label>
+            <input type="text" name="email" placeholder="Nome de usuario ou E-mail">
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" placeholder="Digite sua senha">
           </div>
-          <div>
+          <div id="div__text__btn">
             <input  id="btn" type="button" value="Continuar">
-            <p>voltar</p>
+            <p id="voltar-login">voltar</p>
           </div>
         </form>
       </div>
 </body>
+<script type="module" src="/assets/src/js/login.js"></script>
 </html>
