@@ -1,4 +1,5 @@
 import { Cliente } from "./validacao/validacao.js";
+let id =1;
 
 
 
@@ -22,12 +23,45 @@ function obterValoresDoFormulario() {
   const email = dadosDoFormulario.get('email');
   const senhaDeEntrada = dadosDoFormulario.get('Senha');
 
-validacaoDeUsuario(nome,email,senhaDeEntrada)
+  validacaoDeUsuario(nome,email,senhaDeEntrada)
 }
 
 
 function validacaoDeUsuario(nome,email,senhaDeEntrada){
- const cliente = new Cliente(nome,email,senhaDeEntrada)
+  var regexCaractereEspecial = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+  
+  if (!regexCaractereEspecial.test(senhaDeEntrada)) {
+    alert('A senha deve conter pelo menos um caractere especial (por exemplo, !@#$%^&*)');
+    return false; // Impede o envio do formulário caso a validação falhe
+  }
 
-console.log(cliente.senha)
+  if(nome === null|| email === null || nome.length < 4 || email.length < 4 ){
+    alert("preencha todos os campos")
+  }
+  else{
+    criaUSuario(nome,email,senhaDeEntrada)
+    return true; 
+
+  }     
+    
+  
+  
 }
+
+
+function criaUSuario(nome,email,senhaDeEntrada){
+  let click = true;
+
+  while(click){ 
+    const newUsuario = new Cliente(id,nome,email,senhaDeEntrada)
+    id++
+    console.log(newUsuario.id)
+    click= false;
+  }
+
+}
+
+
+
+
+
