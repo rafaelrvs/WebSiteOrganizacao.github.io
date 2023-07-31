@@ -24,8 +24,8 @@
 }
 .content__login form {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   row-gap: 1.5rem;
   flex-direction: column;
   justify-content: center;
@@ -40,7 +40,6 @@
   border-radius: 25px;
 }
 .content__login #btn{
-
 width:10em;
 height: 3em;
 }
