@@ -1,13 +1,14 @@
 export class Cliente {
   
-  constructor( id,nome, email, senha) {
+  constructor(id,nome, email, senha) {
     this._nome = nome;
     this._email = email;
     this._senha = senha;
     this._id = id;
   }
-
+  
   // Getters e Setters
+ 
 
   get id() {
     return this._id;

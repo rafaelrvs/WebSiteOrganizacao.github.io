@@ -1,4 +1,3 @@
-import { bd } from "./bd/bd.js";
 
 const btnLogin = document.querySelector("#div__text__btn");
 
@@ -23,7 +22,7 @@ function dadosFormularioLogin() {
   const senhaDeEntradaLogin = dadosDoFormulario.get('senha');
 
   if (validate(emailLogin,senhaDeEntradaLogin)){
-      conferindoUsuario()
+      conferindoUsuario(emailLogin,senhaDeEntradaLogin)
   }
 }
 
@@ -36,10 +35,8 @@ function validate(email,senha){
 
 }
 
-function conferindoUsuario(){
-  bd.comparacaoDeContas.forEach((value)=>{
-    console.log(value)
-  })
+function conferindoUsuario(email,senhaDeEntradaLogin){
+
 }
 
 

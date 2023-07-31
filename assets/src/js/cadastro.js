@@ -1,7 +1,8 @@
-import { bd } from "./bd/bd.js";
+
 import { Cliente } from "./validacao/validacao.js";
 let id =1;
 let listaDeUsuario = []
+
 
 
 const btnCadastro = document.querySelector("#container-bnt-cadastro")
@@ -56,11 +57,15 @@ function criaUSuario(nome,email,senhaDeEntrada){
   while(click){ 
     const newUsuario = new Cliente(id,nome,email,senhaDeEntrada)
     id++
-     bd.enviandoContas(newUsuario)
+  
     window.location.href="login.html"
+
     click= false;
+    
   }
   
 }
 
+
+  
   export default listaDeUsuario
