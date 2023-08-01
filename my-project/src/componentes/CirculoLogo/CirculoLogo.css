@@ -1,0 +1,8 @@
+#persona{
+  display: grid;
+  grid-template-columns: repeat(5,3fr);
+  grid-template-rows: repeat(5,3fr);
+  height: 350px;
+  grid-area: 3/4;
+
+}

@@ -1,0 +1,33 @@
+.btn-container{
+  display: grid;
+  grid-template-rows: 3fr;
+  grid-area: 4/1;
+ column-gap: 2rem;
+  width: 100%;
+}
+#back{
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  grid-template-rows: repeat(3, 4fr);
+  columns-gap: 2rem;
+  color: #fff;
+  grid-area: 5/3;  
+}
+.btn-login{
+  display: grid;
+  grid-area: 5/2;
+  align-items: center;
+  padding: 15px;
+  height: 4em;
+  width: 10em;
+  color: #fff;
+  border-radius:25px ;
+  background:linear-gradient(100deg, rgb(248, 2, 117),rgb(248, 2, 117)  ,rgb(241, 13, 13)) ;
+}
+
+:hover .btn-login{
+  cursor: pointer;
+}
+:hover #back{
+  cursor: pointer;
+}
