@@ -1,0 +1,12 @@
+
+.App{
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  grid-template-rows: repeat(5, 1fr);
+  background-color: rgb(31, 31, 75);
+  height: 100vh;
+}
+
+main{
+  
+}
