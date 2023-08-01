@@ -1,18 +1,39 @@
-import './App.css';
-import Botao from './componentes/Botao';
-import CirculoLogo from './componentes/CirculoLogo';
-import Logo from './componentes/Logo';
+import "./App.css";
+import Botao from "./componentes/Botao";
+import CirculoLogo from "./componentes/CirculoLogo";
+import Logo from "./componentes/Logo";
+import React, { useState } from "react";
+import Cadastro from "./componentes/PlanoDeFundo";
+
+
 
 function App() {
+const  [activePageBox,setactivePageBox] = useState(false)
+
+function activePageBoxInterative(event){
+  setTimeout(()=>{
+    setactivePageBox(false)
+    
+  },50000)
+  setactivePageBox(true)
+  event.preventDefault()
+}
+
   return (
     <div className="App">
-      <header> <Logo/></header>
-       <main>
-          <CirculoLogo/>
+      <div id="menuLateral">
+        <Logo />
+        <div id="btn" onClick={activePageBoxInterative}>
+          <Botao>Sing-up</Botao>
+        </div>
+      </div>
+      <main>
+        <div className="container-title">
+          <h1 id="title">Organize-se</h1>
+          <CirculoLogo />
+        </div>
       </main>
- 
-        <Botao >Sing-up</Botao>
-     
+      {activePageBox && < Cadastro/>}
     </div>
   );
 }
