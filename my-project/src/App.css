@@ -29,6 +29,18 @@ margin-top: 100%;
   width: 95%;
   margin-right:150px;
 }
+#btn{
+  display: flex;
+  align-items: baseline;
+  color: #fff;
+  gap: 30px;
+  justify-content: center;
+}
+
+:hover#register{
+  cursor:pointer;
+  color:rgb(151, 244, 10);
+}
 #title{
   width: 100%;
   font-size: 50pt;

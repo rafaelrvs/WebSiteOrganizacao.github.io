@@ -3,28 +3,48 @@ import Botao from "./componentes/Botao";
 import CirculoLogo from "./componentes/CirculoLogo";
 import Logo from "./componentes/Logo";
 import React, { useState } from "react";
-import Cadastro from "./componentes/PlanoDeFundo";
+import Cadastro from "./componentes/Cadastro";
+import Login from "./componentes/Login";
 
 
 
 function App() {
-const  [activePageBox,setactivePageBox] = useState(false)
+const  [activePageBox,setactivePagecadastro] = useState(false)
+const [activePageLogin,setactivePageLogin] = useState(false)
 
-function activePageBoxInterative(event){
+
+
+function loginAtivo(event){
+  const valorClicado = event.target.id
+  if(valorClicado ==="register"){
+  setactivePagecadastro(true)
+  setactivePageLogin(false)
   setTimeout(()=>{
-    setactivePageBox(false)
-    
+    setactivePagecadastro(false)
+
   },50000)
-  setactivePageBox(true)
-  event.preventDefault()
+  }
+  else{
+    setactivePagecadastro(false)
+    setactivePageLogin(true)
+    setTimeout(()=>{
+      setactivePageLogin(false)
+    },50000)
+  }
+    event.preventDefault()
+
 }
+
 
   return (
     <div className="App">
       <div id="menuLateral">
         <Logo />
-        <div id="btn" onClick={activePageBoxInterative}>
-          <Botao>Sing-up</Botao>
+        <div onClick={loginAtivo} id="btn">
+          <Botao >Sing-up</Botao>
+            <p id='register'> Register</p>
+          <div>
+          </div>
         </div>
       </div>
       <main>
@@ -34,6 +54,7 @@ function activePageBoxInterative(event){
         </div>
       </main>
       {activePageBox && < Cadastro/>}
+      {activePageLogin&& <Login/>}
     </div>
   );
 }
