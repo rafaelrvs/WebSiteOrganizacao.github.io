@@ -1,11 +1,9 @@
 #logo{
-  display: grid;
-  grid-area: 4/2;
   height: 80px;
 }
 .logo-container{
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 3fr);
-  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
 }

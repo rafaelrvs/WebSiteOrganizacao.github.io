@@ -6,8 +6,7 @@ const Botao = () => {
     return (
       
       <div className="btn-container">
-        <button className='btn-login' >Sing-in</button>
-        <p id="back">register</p>
+        <button  className='btn-login' >Sing-in</button>
       </div>
 
     )
