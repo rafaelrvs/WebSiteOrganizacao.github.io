@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Login.css"
-import { Cliente } from "../Cadastro";
+import  Cliente  from "../Cadastro";
 class UsuarioLogin{
   constructor(emailLogin,senhaLogin){
 
@@ -38,24 +38,24 @@ const [senhaDigitada,setsenhaDigitada] = useState('')
     event.preventDefault()
     
   }
-  const descarregandoValores = (event)=>{
-    const usuario = new UsuarioLogin(emailDigitado,senhaDigitada)
-   
-  validate(usuario)    
-    event.preventDefault()
+  
+  const descarregandoValores = (event) => {
+    const usuario = new UsuarioLogin(emailDigitado, senhaDigitada);
+    console.log(usuario.emailLogin,Cliente.e); // Usando usuario.emailLogin e Cliente.Email
+    event.preventDefault();
+  };
+  
+  /*
+  function validate(email1, email2) {
+    if (email1 === email2) {
+      alert('Login bem-sucedido!');
+    } else {
+      console.log(email2)
+      alert('Email ou senha inválidos.');
+    }
   }
-
-  function validate(usuario){
-   if(usuario.email === Cliente.email && usuario.senha === Cliente.senha){
-   alert('ok')
-   }
-   else{
-
-     alert('okkoko')
-   }
-
-  }
-
+  
+*/
 
 
 
@@ -73,6 +73,7 @@ const [senhaDigitada,setsenhaDigitada] = useState('')
         <input id="loginSenha"   name="nomeSenha" type="password"placeholder="Senha" onChange={descarregandoSenhaLogin}required/>
         <input id="btnLogin" type="submit" />
       </form>
+
     </div>
   )
 }

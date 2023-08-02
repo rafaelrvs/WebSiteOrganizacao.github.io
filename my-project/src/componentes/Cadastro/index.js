@@ -1,31 +1,30 @@
 import "./Cadastro.css"
 import React,{useState} from "react"
-export class Cliente{
-  constructor(nome,email,senha){
-    this._nome = nome;
-    this._email = email;
-    this._senha = senha; 
+ export class Cliente{
+
+  constructor(nomeInserido,emailInserido,senhaInserido){
+    this._nome = nomeInserido;
+    this._email = emailInserido;
+    this._senha = senhaInserido; 
   }
   
-
-
-  get nome(){
+  get nomeInserido(){
     return this._nome;
   }
-  get email(){
+  get emailInserido(){
     return this._email;
   }
-  get senha(){
+  get senhaInserido(){
     return this._senha;
   }
-  set nome(novoNome){
+  set nomeInserido(novoNome){
    this._nome = novoNome;
   }
-  set email(novoEmail){
-   this._email = novoEmail;
+  set emailInserido(novoEmail){
+    this._email = novoEmail;
   }
-  set senha(novaSenha){
-   this._senha = novaSenha;
+  set senhaInserido(novaSenha){
+    this._senha = novaSenha;
   }
 }
 
@@ -34,24 +33,32 @@ const Cadastro =()=>{
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
-
-
+  const ListaDeUsuario =[]
 
   const descarregandoNome=(event)=>{
     setNome(event.target.value);
+    event.preventDefault()
+   
+
   };
   const descarregandoEmail=(event)=>{
     setEmail(event.target.value);
+    event.preventDefault()
+ 
+    
 
   };
   const descarregandoSenha=(event)=>{
     setSenha(event.target.value);
+    event.preventDefault()
+    
   };
-
+  
   
   const pegandoValor = (event) => {
-   const newUsuario = new Cliente(nome,email,senha)
-   console.log(newUsuario) 
+    const newUsuario = new Cliente(nome,email,senha)
+    console.log(newUsuario) 
+    ListaDeUsuario.push(newUsuario)
     event.preventDefault()
   }
   
